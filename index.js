@@ -193,8 +193,11 @@ client.on('interactionCreate', async interaction => {
   await interaction.reply({ embeds: [embed], ephemeral: true });
 });
 
-client.once('ready', () => {
+client.once('clientReady', () => {
   console.log('Bot started and ready');
 });
+
+
+
 
 client.login(TOKEN);
